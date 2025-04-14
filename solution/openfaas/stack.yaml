@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://172.187.168.148:8080
+functions:
+  grayscale:
+    lang: python3-http
+    handler: ./grayscale
+    image: abdash080/cloudcwgrayscale
